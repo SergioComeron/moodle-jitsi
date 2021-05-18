@@ -257,7 +257,7 @@ class mobile {
         $buttons = "[\"microphone\",\"camera\",\"closedcaptions\",\"".$desktop."\",\"fullscreen\",";
         $buttons .= "\"fodeviceselection\",\"hangup\",\"profile\",\"chat\",\"recording\",\"etherpad\",";
         $buttons .= "\"".$youtubeoption."\",\"settings\",\"raisehand\",\"videoquality\",\"filmstrip\",";
-        $buttons .= "\"".$invite."\",\"feedback\",\"stats\",\"shortcuts\",\"tileview\",\"".$bluroption."\",";
+      	$buttons .= "\"".$invite."\",\"feedback\",\"stats\",\"shortcuts\",\"tileview\",\"".$bluroption."\",";
         $buttons .= "\"download\",\"help\",\"mute-everyone\",\"".$security."\"]";
 
         $data = array();
@@ -268,7 +268,7 @@ class mobile {
         $config = '&config.channelLastN='.$CFG->jitsi_channellastcam;
         $config .= '&config.startWithAudioMuted=true';
         $config .= '&config.startWithVideoMuted=true';
-        $config .= '&config.disableDeepLinking=true';
+	$config .= '&config.disableDeepLinking=true';
         $data['config'] = $config;
         $data['displayName'] = 'userInfo.displayName="'.$nombre.'"';
 
